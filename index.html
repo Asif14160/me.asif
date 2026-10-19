@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asif Iqbal — Web Developer</title>
+<meta name="description" content="Portfolio of Asif Iqbal, frontend and WordPress developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif']},colors:{accent:'#7c5cff',accent2:'#22d3ee'}}}}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0a0a0a] text-zinc-300 font-sans antialiased">
+<div class="glow glow-a"></div><div class="glow glow-b"></div>
+
+<header class="fixed top-0 inset-x-0 z-50">
+  <nav class="glass mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-full px-6 py-3">
+    <a href="#home" class="text-lg font-black text-white">asif<span class="text-accent">.</span></a>
+    <ul class="hidden gap-8 text-sm md:flex">
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#skills">Skills</a></li>
+      <li><a class="nav-link" href="#projects">Work</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+    <button id="menuBtn" class="md:hidden" aria-label="Menu"><i data-lucide="menu"></i></button>
+  </nav>
+  <div id="mobileMenu" class="glass mx-4 mt-2 hidden rounded-2xl p-6 md:hidden">
+    <a class="block py-2" href="#about">About</a><a class="block py-2" href="#skills">Skills</a>
+    <a class="block py-2" href="#projects">Work</a><a class="block py-2" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main>
+<section id="home" class="relative mx-auto grid min-h-screen max-w-6xl items-center gap-12 px-6 pt-28 md:grid-cols-2">
+  <div>
+    <p class="hero-in mb-4 text-accent2">Hello, I'm</p>
+    <h1 class="hero-in text-5xl font-black leading-tight text-white md:text-7xl">Asif Iqbal</h1>
+    <p class="hero-in mt-4 text-xl md:text-2xl">I build <span id="role" class="grad-text font-bold"></span><span class="caret">|</span></p>
+    <p class="hero-in mt-6 max-w-md text-zinc-400">Crafting fast, accessible and beautifully animated websites for brands that want to stand out.</p>
+    <div class="hero-in mt-8 flex flex-wrap items-center gap-4">
+      <a href="#projects" class="btn-primary">View Projects <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+      <a href="https://github.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="https://x.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="X"><i data-lucide="twitter"></i></a>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <div id="avatar" class="avatar-wrap">
+      <!-- Replace with your photo: <img src="images/profile.jpg" alt="Asif Iqbal"> -->
+      <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Asif&backgroundColor=transparent" alt="Profile portrait">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="mx-auto max-w-6xl px-6 py-28">
+  <h2 class="sec-title reveal">About <span class="grad-text">me</span></h2>
+  <div class="mt-10 grid gap-10 md:grid-cols-5">
+    <div class="reveal md:col-span-3 space-y-4 text-lg text-zinc-400">
+      <p>I'm a frontend and WordPress developer who loves turning ideas into polished, interactive experiences. I focus on clean code, smooth motion and interfaces people actually enjoy using.</p>
+      <p>From custom Elementor plugins to full GSAP-driven websites, I care about performance, detail and shipping work that feels premium.</p>
+    </div>
+    <div class="md:col-span-2 grid grid-cols-2 gap-4">
+      <div class="glass reveal rounded-2xl p-5 text-center"><div class="stat text-4xl font-black text-white" data-n="5">0</div><p class="text-sm">Years experience</p></div>
+      <div class="glass reveal rounded-2xl p-5 text-center"><div class="stat text-4xl font-black text-white" data-n="40">0</div><p class="text-sm">Projects done</p></div>
+      <div class="glass reveal rounded-2xl p-5 text-center"><div class="stat text-4xl font-black text-white" data-n="25">0</div><p class="text-sm">Happy clients</p></div>
+      <div class="glass reveal rounded-2xl p-5 text-center"><div class="stat text-4xl font-black text-white" data-n="6">0</div><p class="text-sm">Plugins built</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="mx-auto max-w-6xl px-6 py-28">
+  <h2 class="sec-title reveal">Skills &amp; <span class="grad-text">expertise</span></h2>
+  <div class="mt-10 grid gap-6 md:grid-cols-3">
+    <div class="glass skill-card rounded-2xl p-6"><i data-lucide="layout" class="mb-4 text-accent"></i><h3 class="mb-3 font-bold text-white">Frontend</h3>
+      <div class="tags"><span>HTML5</span><span>CSS3</span><span>Tailwind</span><span>JavaScript</span><span>React</span></div></div>
+    <div class="glass skill-card rounded-2xl p-6"><i data-lucide="server" class="mb-4 text-accent2"></i><h3 class="mb-3 font-bold text-white">Backend</h3>
+      <div class="tags"><span>PHP</span><span>WordPress</span><span>Node.js</span><span>MySQL</span><span>REST APIs</span></div></div>
+    <div class="glass skill-card rounded-2xl p-6"><i data-lucide="wrench" class="mb-4 text-accent"></i><h3 class="mb-3 font-bold text-white">Tools</h3>
+      <div class="tags"><span>Git</span><span>GSAP</span><span>Elementor</span><span>Figma</span><span>Firebase</span></div></div>
+  </div>
+</section>
+
+<section id="projects" class="mx-auto max-w-6xl px-6 py-28">
+  <h2 class="sec-title reveal">Selected <span class="grad-text">work</span></h2>
+  <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <article class="glass project rounded-2xl p-6"><div class="thumb">01</div><h3 class="mt-4 text-xl font-bold text-white">AI Bridge for Elementor</h3>
+      <p class="mt-2 text-sm text-zinc-400">Connect AI tools to WordPress so Elementor designs can be built by command.</p>
+      <div class="tags mt-4"><span>PHP</span><span>Elementor</span><span>MCP</span></div>
+      <div class="mt-5 flex gap-4 text-sm"><a class="link" href="#">Live demo ↗</a><a class="link" href="#">GitHub ↗</a></div></article>
+    <article class="glass project rounded-2xl p-6"><div class="thumb">02</div><h3 class="mt-4 text-xl font-bold text-white">GSAP Scroll Sections</h3>
+      <p class="mt-2 text-sm text-zinc-400">Elementor widget with a preset library of scroll-driven GSAP animations.</p>
+      <div class="tags mt-4"><span>GSAP</span><span>JavaScript</span><span>WordPress</span></div>
+      <div class="mt-5 flex gap-4 text-sm"><a class="link" href="#">Live demo ↗</a><a class="link" href="#">GitHub ↗</a></div></article>
+    <article class="glass project rounded-2xl p-6"><div class="thumb">03</div><h3 class="mt-4 text-xl font-bold text-white">SafeTrack</h3>
+      <p class="mt-2 text-sm text-zinc-400">Firebase web app with GPS sharing, whistle detection and multi-device alarms.</p>
+      <div class="tags mt-4"><span>Firebase</span><span>JavaScript</span><span>PWA</span></div>
+      <div class="mt-5 flex gap-4 text-sm"><a class="link" href="#">Live demo ↗</a><a class="link" href="#">GitHub ↗</a></div></article>
+  </div>
+</section>
+
+<section id="contact" class="mx-auto max-w-4xl px-6 py-28">
+  <h2 class="sec-title reveal text-center">Let's <span class="grad-text">work together</span></h2>
+  <p class="reveal mt-4 text-center text-zinc-400">Have a project in mind? Email <a class="link" href="mailto:you@example.com">you@example.com</a> or use the form.</p>
+  <form id="contactForm" class="glass reveal mt-10 space-y-4 rounded-2xl p-6 md:p-8" action="https://formspree.io/f/YOUR_ID" method="POST">
+    <div class="grid gap-4 md:grid-cols-2">
+      <input class="field" name="name" placeholder="Your name" required>
+      <input class="field" type="email" name="email" placeholder="Your email" required>
+    </div>
+    <textarea class="field" name="message" rows="5" placeholder="Your message" required></textarea>
+    <button class="btn-primary w-full justify-center" type="submit">Send message <i data-lucide="send" class="h-4 w-4"></i></button>
+    <p id="formMsg" class="text-center text-sm"></p>
+  </form>
+</section>
+</main>
+
+<footer class="border-t border-white/10 py-10 text-center text-sm text-zinc-500">
+  <div class="mb-4 flex justify-center gap-4">
+    <a class="icon-btn" href="https://github.com/" aria-label="GitHub"><i data-lucide="github"></i></a>
+    <a class="icon-btn" href="https://linkedin.com/" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+    <a class="icon-btn" href="https://x.com/" aria-label="X"><i data-lucide="twitter"></i></a>
+  </div>
+  © <span id="year"></span> Asif Iqbal. All rights reserved.
+</footer>
+
+<script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
